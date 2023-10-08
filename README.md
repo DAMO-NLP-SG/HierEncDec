@@ -54,7 +54,9 @@ Pre-trained language models (PLMs) have accomplished impressive achievements in 
 
 
 # 2. Running our Code
-
+The data can be downloaded at <a href="https://drive.google.com/file/d/1Av20MJSMpfZiEn6gBmyeII23aLPhWkTf/view?usp=drive_link">HierEncDec_data.zip</a>.
+Unzip this folder to data/ and store it under the root directory.
+Alternatively, you may use your own dataset formated as ``Doc 1 <REVBREAK> Doc 2 <REVBREAK> ... <REVBREAK> Doc n``, where `` <REVBREAK> `` are the separator between documents.
 
 <span id='pre-requisites'/>
 
