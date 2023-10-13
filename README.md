@@ -57,6 +57,12 @@ Pre-trained language models (PLMs) have accomplished impressive achievements in 
 The data can be downloaded at <a href="https://drive.google.com/file/d/1Av20MJSMpfZiEn6gBmyeII23aLPhWkTf/view?usp=drive_link">HierEncDec_data.zip</a>.
 Unzip this folder to data/ and store it under the root directory.
 Alternatively, you may use your own dataset formated as ``Doc 1 <REVBREAK> Doc 2 <REVBREAK> ... <REVBREAK> Doc n``, where `` <REVBREAK> `` are the separator between documents.
+The exact locations where we download existing datasets are provided in Appendix B of our paper.
+Note that to reporduce the <a href="#baselines">PRIMERA</a> results, you need to use ``<doc-sep>'' for the separator token instead.
+
+For the downloaded ``data/``,  our new datasets are organized as follows:
+- the MReD+ data are under the ``mred/`` folder, ending with ``_rebuttal.json``.
+- the 4 Wikipedia domains data are stored under the folders of ``Film/``, ``MeanOfTransportation/``, ``Software/``, and ``Town/`` respectively.
 
 <span id='pre-requisites'/>
 
@@ -97,7 +103,7 @@ CUDA_VISIBLE_DEVICES=0 python run_summarization.py --output_dir results/bart_hed
 ```
 Specifically, the flags ``--enc_cross_doc`` enables the hierarchical encoder, whereas ``--doc_dec`` enables hieararchical decoder. 
 
-For other datasets, set ``--max_steps`` to the following values
+For other datasets, set ``--max_steps`` to the following values (See more explainations in Sections 5.1 and 5.3 our paper).
 * Mutlinews: 130000, use additional flag ``--per_passage_source_length_limit``
 * WCEP: 15500, use additional flag ``--per_passage_source_length_limit``
 * Multi-Xscience: 90000, use additional flag ``--per_passage_source_length_limit``
