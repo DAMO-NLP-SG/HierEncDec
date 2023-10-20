@@ -103,7 +103,7 @@ CUDA_VISIBLE_DEVICES=0 python run_summarization.py --output_dir results/bart_hed
 ```
 Specifically, the flags ``--enc_cross_doc`` enables the hierarchical encoder, whereas ``--doc_dec`` enables hieararchical decoder. 
 
-For other datasets, set ``--max_steps`` to the following values, and use ``--per_passage_source_length_limit`` for the first 3 datasets (See more explainations in Section 5.3 of our paper).
+For other datasets, set ``--max_steps`` to the following values, and use ``--per_passage_source_length_limit`` for the first 3 datasets (see more explainations in Section 5.3 of <a href="https://arxiv.org/abs/2305.08503">our paper</a>).
 * Mutlinews: 130000, use additional flag ``--per_passage_source_length_limit``
 * WCEP: 15500, use additional flag ``--per_passage_source_length_limit``
 * Multi-Xscience: 90000, use additional flag ``--per_passage_source_length_limit``
@@ -115,7 +115,7 @@ For other datasets, set ``--max_steps`` to the following values, and use ``--per
 * WikiDomains-Town: 37000
 * WikiDomains-Software: 35000
 
-For Multinews and WCEP, we follow <a href="https://github.com/allenai/PRIMER"> PRIMERA </a> to truncate source by limiting each document to an equal size of length (i.e. truncate the end of each document to satisfy the source length limit). Thus, we use an additional flag ``--per_passage_source_length_limit``. For other datasets, source truncation is simply done by truncating the end of the combined source documents.
+<!-- For Multinews and WCEP, we follow <a href="https://github.com/allenai/PRIMER"> PRIMERA </a> to truncate source by limiting each document to an equal size of length (i.e. truncate the end of each document to satisfy the source length limit). Thus, we use an additional flag ``--per_passage_source_length_limit``. For other datasets, source truncation is simply done by truncating the end of the combined source documents. -->
 
 <!-- This is because the front of the passage is very important for news articles whereas the end of the passage matters less.  -->
 
