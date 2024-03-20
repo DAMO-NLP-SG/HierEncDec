@@ -1,7 +1,7 @@
 # A Hierarchical Encoding-Decoding Scheme for Abstractive Multi-document Summarization
 **Authors**: Chenhui Shen, Liying Cheng, Xuan-Phi Nguyen, Yang You and Lidong Bing
 
-This repository contains code and related resources of our paper ["A Hierarchical Encoding-Decoding Scheme for Abstractive Multi-document Summarization"](https://arxiv.org/abs/2305.08503).
+This repository contains code and related resources of our paper ["A Hierarchical Encoding-Decoding Scheme for Abstractive Multi-document Summarization"](https://aclanthology.org/2023.findings-emnlp.391.pdf).
 
 <!-- :star2: Check out this awesome [[demo]](https://huggingface.co/spaces/joaogante/contrastive_search_generation) generously supported by Huggingface ([@huggingface](https://github.com/huggingface) :hugs:) which compares contrastive search with other popular decoding methods. Many thanks to Huggingface :hugs:!  -->
 
